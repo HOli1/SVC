@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #4d4643;
+  padding-top: 0px;
 }
 
 a {
@@ -76,6 +77,14 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }*/
 
+.fixed-top {
+  /*top: 0;*/
+  /*border-width: 0 0 1px;*/
+  position: fixed;
+  /*right: 0;*/
+  /*left: 0;*/
+}
+
 .top-area p {
   FONT-WEIGHT: 30px;
   margin-bottom: 10px;
@@ -92,13 +101,17 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-/*.top-area {
-  background: #3fbbc0;
+.top-area {
+  /*background: #2ae149;*/
+  /*background: #ffa76e;*/
   width: 100%;
-  color: #fff;
- 
-}*/
 
+}
+
+/*.top-area p{
+    color: #fff;
+}
+*/
 
 .top-area.top-padding {
     -webkit-transition: all .4s ease-in-out;
@@ -106,9 +119,12 @@ h1, h2, h3, h4, h5, h6 {
     transition: all .4s ease-in-out;
     padding-top: 6px;
     padding-bottom: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
+.bold {
+  color:#fff;
+}
 /*//////////////////////////////*/
 
 .portofoliu {
@@ -175,14 +191,20 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   transform-style: preserve-3d;
   transition: all 1.5s ease;
+  text-align: center;
 }
 
  /*THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
 .thecard:hover{
   transform: rotateY(180deg);
+}
+
+.thecard i{
+  color:#2ae149;
+  /*color:#8c9eff;*/
 }
 
  /*THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
@@ -192,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  border-radius: 20px;
   backface-visibility: hidden;
   overflow: hidden;
   /*background: #ffc728;*/
@@ -207,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  border-radius: 20px;
   backface-visibility: hidden;
   overflow: hidden;
   /*background: #fafafa;*/
@@ -236,10 +258,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code 
 
-/*/*/*/?????????????????????????????????????????????????????????*/*/*/
+/*/*/*/?????????????????????????????????????????????????????????*/*/
+
+/*@import url(../plugins/industrio-icon/style.css);
+
+[class^="industrio-icon-"], [class*=" industrio-icon-"] {
+    font-family: 'industrio-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 
-/*/*/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/*/*/
+
+
+.industrio-icon-safty{
+  font-family: 'industrio-icon' !important;
+}*/
+
+
+/*/*//***//*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/*/*/*/*/
 
 
 
@@ -263,8 +306,10 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  /*padding: 15px 0;*/
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  top:0;
+  padding-bottom: 10px;
 }
 
 #header .logo {
@@ -972,10 +1017,13 @@ section {
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
-  /*margin: 10px 10px 10px 10px;*/
-  border: 2px solid #1bbd36;
+  /*margin: 5px 5px 5px 5px;*/
+  border: 1px solid #1bbd36;
   /*width: 250px;*/
-  height: 300px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 30px 10px 30px 10px;
+  /*background-color: #fff;*/
 
 }
 
